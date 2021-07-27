@@ -1,10 +1,27 @@
 .food-list{
-    display:flex;
-    text-align: center;
+
+    padding-top:20px;
     width:100px;
     height:100px;
 }
 .food-list__column{
     display:flex;
-    
+    text-align: center;
+    width:300px;
+}
+.main__contents-first{
+    margin-bottom:50px;
+}
+.main__contents-second{
+    margin-bottom:50px;
+}
+.main-contents-third{
+    margin-top:50px;
+}
+
+.food-title{
+    margin-top:50px;
+    font-size:22px;
+    font-weight: 600;
+    text-shadow:0 0 15px white;
 }
