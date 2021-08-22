@@ -1,27 +1,92 @@
-.food-list{
-
-    padding-top:20px;
-    width:100px;
-    height:100px;
-}
-.food-list__column{
-    display:flex;
-    text-align: center;
-    width:300px;
-}
-.main__contents-first{
-    margin-bottom:50px;
-}
-.main__contents-second{
-    margin-bottom:50px;
-}
-.main-contents-third{
-    margin-top:50px;
-}
-
 .food-title{
+    display:flex;
+    justify-content: space-between;
     margin-top:50px;
-    font-size:22px;
-    font-weight: 600;
-    text-shadow:0 0 15px white;
 }
+
+footer{
+    display:flex;
+    justify-content: flex-start;
+    margin-top:20px;
+    height: 100vh;
+}
+
+.food-list{
+    width: 300px;
+    height:+ 350px;
+    position: relative;
+}
+input[name=tabmenu]{
+    display: none;
+}
+.content{
+    display:none;
+}
+.btn{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom:-5px;
+}
+.btn label{
+    background-color: lightgray;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor:pointer;
+}
+input[id=tab1]:checked ~ .slide1{
+    display: block;
+}
+input[id=tab2]:checked ~ .slide2{
+    display: block;
+}
+input[id=tab3]:checked ~ .slide3{
+    display: block;
+}
+input[id=tab4]:checked ~ .slide4{
+    display: block;
+}
+
+input[id=tab1]:checked ~ .btn label[for=tab1]{
+    background-color: crimson;
+}
+
+input[id=tab2]:checked ~ .btn label[for=tab2]{
+    background-color: crimson;
+}
+
+input[id=tab3]:checked ~ .btn label[for=tab3]{
+    background-color: crimson;
+}
+
+input[id=tab4]:checked ~ .btn label[for=tab4]{
+    background-color: crimson;
+}
+
+.food-list__column{
+    width:300px;
+    height:320px;
+    
+}
+
+.header__back-btn{
+    font-size:22px;
+    margin-right:20px;
+}
+
+/* chat-message */
+.message{
+    display:flex;
+    align-items: flex-start;
+    line-height: 10px;
+    margin-bottom:20px;
+}
+.incoming-spanmsg{
+    margin-bottom:10px;
+}
+span{
+    display: block;
+}
+
